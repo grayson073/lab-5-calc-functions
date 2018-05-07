@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 /* globals remainder, add, subtract, multiple, divide */
-/* exported testAdd */
+/* exported testRemainder, testAdd, testSubtract, testDivide */
 'use strict';
 
 
