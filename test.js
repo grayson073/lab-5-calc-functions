@@ -1,8 +1,16 @@
+/* globals add, subtract, multiple, divide */
+/* exported testAdd */
 'use strict';
 
-//AC #3 function return remainder
-if(dividend % divisor === result) {
-    console.log('TDD-AC3 - function returns correct result - SUCCESS');
-} else {
-    console.error('TDD-AC3 - function returns correct result - FAIL');
+
+
+function testRemainder() {
+    var result = remainder(29, 6);
+    if(result.value !== 5) {
+        console.error('testRemainder - value - FAIL', result.value, 7);
+    } else {
+        console.log ('testRemainder - value - SUCCESS');
+    }
 }
+
+testRemainder();
