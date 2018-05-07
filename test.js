@@ -1,6 +1,6 @@
 // eslint-disable-next-line
-/* globals remainder, add, subtract, multiple, divide */
-/* exported testAdd */
+/* globals remainder, add, subtract, multiple, divide, multiply */
+/* exported testRemainder, testAdd, testSubtract, testDivide, testMultiplication */
 'use strict';
 
 
@@ -41,7 +41,17 @@ function testDivide() {
     }
 }
 
+function testMultiplication() {
+    var result = multiply(5, 4);
+    if(result.value !== 20) {
+        console.error('testMultiplication - value - FAIL', result.value);
+    } else {
+        console.log ('testMultiplication - value - SUCCESS');
+    }
+}
+
 testRemainder();
 testAdd();
 testSubtract();
 testDivide();
+testMultiplication();

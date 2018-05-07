@@ -4,28 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Quick Calculator (Lab 5)</title>
 </head>
 <body>
     <h1>Do Some Calculations!</h1>
 
     <section>
         <div>
-            <input id="num1" type="number" placeholder="Number (e.g. 5)">
-            <input id="num2" type="number" placeholder="Number (e.g. 7)">
-            <span id="operator"></span>
-            <span id="answer"></span>
+            <input id="remainder1" type="number" placeholder="Number (e.g. 5)">&nbsp % &nbsp
+            <input id="remainder2" type="number" placeholder="Number (e.g. 7)">&nbsp = &nbsp
+            <span id="answerRemainder"></span>
         </div>
         <div>
             <button onclick="showRemainder()">Remainder</button>
-            <button onclick="doAddition()">Addition</button>
-            <button onclick="doSubtraction()">Subtraction</button>
-            <button onclick="doDivision()">Division</button>
         </div>
-        <p id="description"></p>
+        <p id="remainder-description"></p>
+    </section>
+    <br>
+    <br>
+    <section>
+            <div>
+                <input id="addition1" type="number" placeholder="Number (e.g. 5)">&nbsp + &nbsp
+                <input id="addition2" type="number" placeholder="Number (e.g. 7)">&nbsp = &nbsp
+                <span id="answerAddition"></span>
+            </div>
+            <div>
+                <button onclick="doAddition()">Addition</button>
+            </div>
+            <p id="addition-description"></p>
+    </section>
+    <br>
+    <br>
+    <section>
+            <div>
+                <input id="subtraction1" type="number" placeholder="Number (e.g. 5)">&nbsp - &nbsp
+                <input id="subtraction2" type="number" placeholder="Number (e.g. 7)">&nbsp = &nbsp
+                <span id="answerSubtraction"></span>
+            </div>
+            <div>
+                <button onclick="doSubtraction()">Subtraction</button>
+            </div>
+            <p id="subtraction-description"></p>
+    </section>
+    <br>
+    <br>
+    <section>
+            <div>
+                <input id="division1" type="number" placeholder="Number (e.g. 5)">&nbsp / &nbsp
+                <input id="division2" type="number" placeholder="Number (e.g. 7)">&nbsp = &nbsp
+                <span id="answerDivision"></span>
+            </div>
+            <div>
+                <button onclick="doDivision()">Division</button>
+            </div>
+            <p id="division-description"></p>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div>
+            <input id="multiplication1" type="number" placeholder="Number (e.g. 5)">&nbsp x &nbsp
+            <input id="multiplication2" type="number" placeholder="Number (e.g. 7)">&nbsp = &nbsp
+            <span id="answerMultiplication"></span>
+        </div>
+        <div>
+            <button onclick="doMultiplication()">Multiplication</button>
+        </div>
+        <p id="multiplication-description"></p>
     </section>
 
     <script src="calc.js"></script>
     <script src="app.js"></script>
+    <script src="test.js"></script>
+
 </body>
 </html>
