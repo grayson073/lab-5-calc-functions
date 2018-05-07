@@ -4,7 +4,7 @@ Write an app that has several sections that take numeric input and return the re
 value as well as a description of the operations.
 
 For example, the addition section has two inputs, and clicking the button displays the sum as well as the description. For example,
-inputting 3 and 4 would display a 7 as well as the text "The sum of 3 and 4 is 7".
+inputting 3 and 4 would display a 7 as well as the text "Sum of 3 and 4 is 7".
 
 ![image](https://user-images.githubusercontent.com/478864/39680869-55c02e08-515a-11e8-84d3-ff44339a7045.png)
 
