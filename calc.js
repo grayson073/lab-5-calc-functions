@@ -2,7 +2,7 @@
 'use strict';
 
 function remainder(x, y) {
-    var remainder = x % y;
+    var remainder = Number(x) % Number(y);
 
     return {
         value: '= ' + remainder,
@@ -20,7 +20,7 @@ function add(x, y) {
 }
 
 function subtract(x, y) {
-    var subtract = x - y;
+    var subtract = Number(x) - Number(y);
 
     return {
         value: '= ' + subtract,
@@ -29,8 +29,8 @@ function subtract(x, y) {
 }
 
 function divide(x, y) {
-    var divide = x / y;
-
+    var divide = Number(x) / Number(y);
+    
     return {
         value: '= ' + divide.toFixed(2), //toFixed(2) rounds decimal to 2 places e.g. 1.67
         description: 'The number ' + x + ' divided by ' + y + ' is ' + divide.toFixed(2) + '. (Rounded to 2 decimal places)'

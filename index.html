@@ -11,21 +11,58 @@
 
     <section>
         <div>
-            <input id="num1" type="number" placeholder="Number (e.g. 5)">
-            <input id="num2" type="number" placeholder="Number (e.g. 7)">
-            <span id="operator"></span>
-            <span id="answer"></span>
+            <input id="remainder1" type="number" placeholder="Number (e.g. 5)">&nbsp%&nbsp
+            <input id="remainder2" type="number" placeholder="Number (e.g. 7)">
+            <span id="answerRemainder"></span>
         </div>
         <div>
             <button onclick="showRemainder()">Remainder</button>
-            <button onclick="doAddition()">Addition</button>
-            <button onclick="doSubtraction()">Subtraction</button>
-            <button onclick="doDivision()">Division</button>
         </div>
-        <p id="description"></p>
+        <p id="remainder-description"></p>
     </section>
+
+
+    <section>
+            <div>
+                <input id="addition1" type="number" placeholder="Number (e.g. 5)">&nbsp+&nbsp
+                <input id="addition2" type="number" placeholder="Number (e.g. 7)">
+                <span id="answerAddition"></span>
+            </div>
+            <div>
+                <button onclick="doAddition()">Addition</button>
+            </div>
+            <p id="addition-description"></p>
+    </section>
+
+
+    <section>
+            <div>
+                <input id="subtraction1" type="number" placeholder="Number (e.g. 5)">&nbsp-&nbsp
+                <input id="subtraction2" type="number" placeholder="Number (e.g. 7)">
+                <span id="answerSubtraction"></span>
+            </div>
+            <div>
+                <button onclick="doSubtraction()">Subtraction</button>
+            </div>
+            <p id="subtraction-description"></p>
+    </section>
+
+
+    <section>
+            <div>
+                <input id="division1" type="number" placeholder="Number (e.g. 5)">&nbsp/&nbsp
+                <input id="division2" type="number" placeholder="Number (e.g. 7)">
+                <span id="answerDivision"></span>
+            </div>
+            <div>
+                <button onclick="doDivision()">Division</button>
+            </div>
+            <p id="division-description"></p>
+    </section>
+
 
     <script src="calc.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>
