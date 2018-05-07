@@ -11,7 +11,7 @@ function remainder(x, y) {
 }
 
 function add(x, y) {
-    var add = x + y;
+    var add = Number(x) + Number(y);
 
     return {
         value: '= ' + add,
